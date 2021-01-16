@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/home_icon"
+            android:title="হোম" />
+        <item
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/profile_icon"
+            android:title="প্রোফাইল" />
+
+        <item
+            android:id="@+id/menu_password_change"
+            android:icon="@drawable/password_change_icon"
+            android:title="পাসওয়ার্ড পরিবর্তন" />
+    </group>
+<item android:title="">
+    <menu>
+        <item
+            android:id="@+id/menu_refer_friend"
+            android:icon="@drawable/reference_icon"
+            android:title="রেফার করুন" />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="লগ আউট" />
+        </menu>
+    </item>
+</menu>

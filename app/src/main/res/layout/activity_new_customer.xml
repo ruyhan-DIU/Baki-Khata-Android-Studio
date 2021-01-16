@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_customer_popup"
+    android:layout_width="350dp"
+    android:layout_height="550dp"
+    android:background="@color/white"
+    tools:context=".new_customer">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="285dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="51dp"
+        android:layout_marginTop="46dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="সেভ করুন"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baki_amount" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="143dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="কাস্টমার"
+        android:textColor="@color/purple_500"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textclose"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textclose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circlebackground"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/baki_amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="125dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="30dp"
+        android:hint="বাকি"
+        android:inputType="number"
+        app:boxStrokeColor="#266761"
+        app:layout_constraintEnd_toStartOf="@+id/joma_amount"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer_phone"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/joma_amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="125dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="30dp"
+        android:hint="জমা"
+        android:inputType="number"
+        app:boxStrokeColor="#266761"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/baki_amount"
+        app:layout_constraintTop_toBottomOf="@+id/customer_phone"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/customer_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="285dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="46dp"
+        android:hint="নাম"
+        android:inputType="textPersonName"
+        app:boxStrokeColor="#266761"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="MissingConstraints">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/customer_phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="285dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="24dp"
+        android:hint="মোবাইল"
+        android:inputType="phone"
+        app:boxStrokeColor="#266761"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer_name"
+        tools:ignore="MissingConstraints">
+
+    </EditText>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

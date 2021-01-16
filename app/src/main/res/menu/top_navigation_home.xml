@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/daily_hisab"
+    android:title="ব্যাক্তিগত ল্যানদেন"/>
+
+    <item
+        android:id="@+id/menu_total_count"
+        android:icon="@drawable/monthly_hisab"
+        android:title="সর্বমোট ল্যানদেন"/>
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/help"
+        android:title="সাহায্য"/>
+
+</menu>
